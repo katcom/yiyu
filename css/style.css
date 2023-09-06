@@ -7,23 +7,9 @@ body {
   background-color: rgb(242, 250, 253);
   height:100%
 }
-.button {
-  background-color: rgb(255, 255, 255,0.01);
-  border: 2px solid white;
-  color: white;
-  padding: 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 50px 2px;
-  border-radius: 10%;
-}
-.button:hover{
-    border: 2px solid lightblue;
-}
 .nav-link{
   margin: 5px;
+  font-weight: 550;
 }
 .left-column-container{
     display: flex;
@@ -34,9 +20,12 @@ body {
 .right-column-container{
     width: 30%
 }
+.nav-link-container{
+  margin-bottom: 20px;
+}
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 250px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -44,29 +33,30 @@ body {
   background-color: #124991;
   overflow-x: hidden;
   padding-top: 20px;
-  justify-content: center;
   align-items: center;
-
-  /* display: flex;
-  flex-direction: column; */
+  padding-top:30px;
+  display: flex;
+  flex-direction: column;
 }
 .logo{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    width: 150px;
 }
 .sidenav a {
   padding: 6px 6px 6px 6px;
   text-decoration: none;
   font-size: 16px;
-  color: #f1f1f1;
+  /* color: #f1f1f1; */
+  color:white;
   display: block;
 }
 
 .sidenav a:hover {
-  color: lightblue;
+  color: rgb(0, 152, 255);
 }
 
 .main {
-  margin-left: 200px; /* Same as the width of the sidenav */
+  margin-left: 250px; /* Same as the width of the sidenav */
   background-color: rgb(242, 250, 253)
 
 }
@@ -79,4 +69,48 @@ iframe {
         border: 0px;
         width: 100%; /* takes precedence over the width set with the HTML width attribute */
       }
-
+  .btn
+  {      
+      overflow: hidden;
+      border: 2px solid white;  
+      font-family: 'Arial';
+      font-size: 1rem;
+      color: white;
+      background: none;
+      cursor: pointer;
+      padding: 10px 25px;
+      display: inline-block;
+      margin: 15px 30px;
+      text-transform: uppercase;
+      outline: none;
+      position: relative;
+      transition: all 0.3s;
+      border-radius: 4rem;
+      font-weight:700;
+  }
+  .btn:after{
+      content: '';
+      position: absolute;
+      z-index: -1;
+      transition: all 0.3s;
+     box-sizing: border-box;
+  }
+  .btn-03:after {
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+  }
+  
+  .btn-03:hover,
+  .btn-03:active {
+    color: #457b9d;
+  }
+  
+  .btn-03:hover:after,
+  .btn-03:active:after {
+    width: 100%;
+  }
+  
+  
