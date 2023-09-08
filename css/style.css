@@ -13,6 +13,15 @@ body {
   margin: 0;
 
 }
+.corner-wrapper {
+  display: block;
+  overflow: hidden;
+  width:98%;
+  height: 80vh;
+  border-radius: 1rem;
+  transform: translateZ(0px);
+  border: 1px solid #dbf3ff;
+}
 .my-container{
   width: 80%;
   max-width: 80%;
@@ -32,7 +41,7 @@ body {
     width: 30%
 }
 .nav-link-container{
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -56,7 +65,7 @@ body {
   
 }
 .logo{
-    margin-bottom: 50px;
+    margin-bottom: 2rem;
     width: 80%;
 }
 .sidenav a {
@@ -139,6 +148,19 @@ iframe {
     justify-content: center;
     font-size: 1rem;
   }
+  @media only screen and (max-width: 900px) {
+    .logo{
+      margin-bottom: 1rem;
+    }
+    .sidenav a{
+      font-size: 0.6rem;
+    }
+    .custom-btn{
+      font-size: 0.4rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+
   @media only screen and (min-width: 1300px) {
     .sidenav a{
       font-size: 1.5rem;
@@ -156,7 +178,6 @@ iframe {
 
     .sidenav{
       width: 15%;
-      
     }
     .my-container{
       width: 85%;
@@ -167,6 +188,9 @@ iframe {
       font-size: 1.5rem;
       border-width: 0.2rem;
       padding: 1.3rem 2.8rem;
+    }
+    .nav-link-container{
+      margin-bottom: 6rem;
     }
   }
   @media only screen and (min-width: 3000px) {
