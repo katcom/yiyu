@@ -32,10 +32,11 @@ body {
   font-weight: 550;
 }
 .left-column-container{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 10px;
+  align-items: center;
 }
 .right-column-container{
     width: 30%
@@ -146,7 +147,7 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   @media only screen and (max-width: 900px) {
     .logo{
@@ -159,6 +160,13 @@ iframe {
       font-size: 0.4rem;
       padding: 0.4rem 0.8rem;
     }
+    .contact-container{
+      font-size: 0.5rem;
+      height: 6rem;
+    }
+    .left-column-container{
+      padding: 5px;
+    }
   }
 
   @media only screen and (min-width: 1300px) {
@@ -168,6 +176,13 @@ iframe {
     .custom-btn{
       font-size: 1rem;
       padding: 1rem 2rem;
+    }
+    .contact-container{
+      font-size: 1.2rem;
+      height: 13rem;
+    }
+    .logo{
+      margin-bottom: 3rem;
     }
   }
   @media only screen and (min-width: 2000px) {
@@ -192,15 +207,18 @@ iframe {
     .nav-link-container{
       margin-bottom: 6rem;
     }
+    .left-column-container{
+      padding: 3rem;
+    }
   }
   @media only screen and (min-width: 3000px) {
 
     .nav-link-container {
       height: 50%;
-      margin-bottom: 3.6rem;
+      margin-bottom: 4rem;
     }
     .sidenav a{
-      font-size: 3rem;
+      font-size: 3.2rem;
     }
     .custom-btn{
       font-size: 2.5rem;
@@ -211,7 +229,10 @@ iframe {
       margin-bottom: 10rem
     }
     .contact-container{
-      font-size: 2rem;
-      height: 20rem;
+      font-size: 2.5rem;
+      height: 25rem;
+    }
+    .left-column-container{
+      padding: 5rem;
     }
   }
