@@ -13,11 +13,16 @@ body {
   margin: 0;
 
 }
+.max-w-\[800px\]{
+  max-width: 100%!important;
+}
 .corner-wrapper {
   display: block;
   overflow: hidden;
   width:98%;
-  height: 80vh;
+  /* height: 80vh; */
+  height: auto;
+  min-height: 80vh;
   border-radius: 1rem;
   transform: translateZ(0px);
   border: 1px solid #dbf3ff;
@@ -149,6 +154,9 @@ iframe {
     justify-content: center;
     font-size: 0.8rem;
   }
+  #inlineFrameExample{
+    min-height: 80vh;
+  }
   @media only screen and (max-width: 900px) {
     .logo{
       margin-bottom: 1rem;
@@ -210,6 +218,13 @@ iframe {
     .left-column-container{
       padding: 3rem;
     }
+    #inlineFrameExample{
+      transform: scale(calc(100%*1.5));
+      transform-origin: top;
+    }
+    .corner-wrapper{
+      overflow-y: visible;
+    }
   }
   @media only screen and (min-width: 3000px) {
 
@@ -234,5 +249,18 @@ iframe {
     }
     .left-column-container{
       padding: 5rem;
+    }
+    #inlineFrameExample{
+      transform: scale(calc(100%*2.5));
+      transform-origin: top;
+    }
+    .corner-wrapper{
+      overflow-y: visible;
+    }
+  }
+  @media only screen and (min-width: 4000px) {
+    #inlineFrameExample{
+      transform: scale(calc(100%*3));
+      transform-origin: top;
     }
   }
